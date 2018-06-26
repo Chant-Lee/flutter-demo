@@ -6,6 +6,24 @@ A new Flutter project.
 
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
+
+## demo运行
+```
+flutter run
+```
+如果你未装flutter，参考官方文档[https://flutterchina.club/setup-macos/](https://flutterchina.club/setup-macos/)
+```
+git clone -b beta https://github.com/flutter/flutter.git
+
+export PUB_HOSTED_URL=https://pub.flutter-io.cn //国内用户需要设置
+
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn //国内用户需要设置
+
+export PATH=`pwd`/flutter/bin:$PATH
+
+flutter doctor 
+```
+
 ## 简单上手
 
 首先要了解两大类型widget：StatelessWidget和StatefulWidget
