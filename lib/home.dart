@@ -5,6 +5,7 @@ import 'package:demo/app/tabs/brands.dart';
 import 'package:demo/app/tabs/me.dart';
 
 class TestApp extends StatefulWidget {
+
   @override
   HomeState createState() => new HomeState();
 }
@@ -57,7 +58,6 @@ class HomeState extends State<TestApp> with SingleTickerProviderStateMixin {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("flutter demo"),
-        backgroundColor: Colors.blue,
         bottom: getTabBar(),
       ),
       body: getTabBarView(<Widget>[new Index(), new Brands(), new Me()]),
