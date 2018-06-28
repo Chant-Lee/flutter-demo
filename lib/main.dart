@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:demo/home.dart';
+import 'package:demo/app/util/utils.dart';
 
 void main() {
   runApp(new MaterialApp(
     title: "demo测试",
-    theme: new ThemeData(
-      primaryIconTheme: const IconThemeData(color: Colors.white),
-      brightness: Brightness.light,
-      primaryColor: new Color.fromARGB(255, 0, 215, 198),
-      accentColor: Colors.cyan[300],
-    ),
+    theme: demoTheme(),
     home: new TestApp()));
 }
 
